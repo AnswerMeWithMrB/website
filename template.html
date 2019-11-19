@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Answer Me With Mr B</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body, html {
+        height: 100%;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+      }
+      
+      nav {
+        color: white;
+        position: absolute;
+        overflow: hidden;
+        right: 0;
+        margin: 20px 50px;
+      }
+      
+      .nav-link {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 400;
+      }
+      
+      .nav-link:hover {
+        color: #dbdbdb;
+      }
+      
+      .nav-link.active {
+        border-bottom: 3px solid #03a9f4;
+      }
+      
+      .nav-link.active:hover {
+        color: #03a9f4;
+      }
+      
+      footer {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #acb7c3
+      }
+      
+      form textarea {
+        resize: vertical;
+      }
+      
+      form input, form textarea {
+        display: block;
+        width: 100%;
+        font-family: 'Open Sans';
+        margin: 5px 0;
+        font-size: 1rem;
+        padding: 5px;
+      }
+      
+      form input[type=submit] {
+        width: inherit;
+        font-size: 1rem;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      
+      .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+        margin-bottom: 20px;
+      }
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      #opener {
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: 0px;
+      }
+      
+      #hero {
+        background-image: 
+          linear-gradient(
+            rgba(0, 0, 0, 0.45), 
+            rgba(0, 0, 0, 0.45)
+          ),
+          url('assets/images/planet-hero.jpg');
+        height: 100vh;
+      }
+      
+      #hero-text {
+        color: white;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+      
+      #hero-title {
+        color: white;
+        font-weight: 10;
+        position: absolute;
+        left: 0;
+        margin: 20px 50px;
+      }
+      
+      #title {
+        text-align: center;
+        font-weight: 400;
+      }
+      
+      #welcome {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+      
+      #subscribe {
+        background-image: linear-gradient(45deg,#874da2 0,#c43a30 100%);
+        padding: 70px;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 100;
+      }
+      
+      #contact {
+        background-image: 
+          linear-gradient(
+            rgba(0, 0, 0, 0.35), 
+            rgba(0, 0, 0, 0.35)
+          ),
+          url('assets/images/contact-background.jpg');
+        padding: 20px 0 50px 0;
+      }
+      
+      #contact-form {
+        background-color: white;
+        width: 30%;
+        margin: auto;
+        padding: 40px;
+      }
+      
+      #contact-form div {
+        display: block;
+      }
+      
+      /* Utility Classes */
+      .white {
+        color: white;
+      }
+      
+      .center {
+        text-align: center;
+      }
+      
+      .auto {
+        margin: auto;
+      }
+      
+      .bold {
+        font-weight: 600;
+      }
+      
+      .font-600 {
+        font-weight: 600;
+      }
+      
+      .font-400 {
+        font-weight: 400;
+      }
+      
+      .font-300 {
+        font-weight: 300;
+      }
+      
+      .right {
+        float: right;
+      }
+      
+      .btn {
+        padding: 10px 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        border: none;
+      }
+      
+      .btn.round {
+        border-radius: 40px;
+      }
+      
+      .btn.square {
+        border-radius: 0;
+      }
+      
+      .btn.blue {
+        color: white;
+        background-color: #03a9f4;
+      }
+      
+      .btn.orange {
+        background-color: #ff9800;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hero" class="parallax">
+      <a href="#"><h1 id="hero-title"><span class="bold">ANSWER</span> ME <span class="bold">WITH</span> MR <span class="bold">B</span></h1></a>
+      <nav>
+        <a href="#" class="nav-link">Videos</a>
+        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link active">Home</a>
+      </nav>
+      <div id="hero-text">
+        <h1 id="opener">Welcome to Answer Me With Mr B HQ!</h1>
+        <h3 class="font-300" style="margin-bottom: 30px;">Physics is true. Ya!</h3>
+        <a href="https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ" class="btn blue round" target="_blank">Visit on Youtube</a>
+      </div>
+    </div>
+    <div id="page">
+      <div id="welcome">
+        <h1 id="title">Welcome to the channel!</h1>
+        <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/A-bLSGP1gwU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <a href="#" class="btn blue">View More</a>
+      </div>
+      <div id="subscribe">
+        <span class="bold">Subscribe!</span> It will only take you 1984123 µs <a href="https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ?sub_confirmation=1" target="_blank" class="btn orange right">Subscribe</a>
+      </div>
+      <div id="contact" class="parallax">
+        <h1 class="center white font-400">Contact Mr B</h1>
+        <form id="contact-form" method="get">
+          <label for="fname">Name:</label>
+          <input type="text" id="fname" name="name" placeholder="Name" required>
+          <label for="fname">Email:</label>
+          <input type="email" id="femail" name="email" placeholder="Email" required>
+          <label for="fmessage">Your message:</label>
+          <textarea id="fmessage" name="message" placeholder="Say hello..." style="height:200px" required></textarea>
+
+          <input type="submit" value="Send" class="btn blue square">
+        </form>
+      </div>
+    </div>
+    <footer>
+      &copy; 2019 Answer Me With Mr B.
+    </footer>
+  </body>
+</html>
