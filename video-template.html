@@ -7,50 +7,62 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <style type="text/css">
-      .nav-bar-white {
+      .navbar-white {
         background-color: white;
+      }
+      
+      .navbar-white a {
+        color: black;
+      }
+      
+      .navbar-white #hero-title {
+        color: black;
+      }
+      
+      #header {
+        background-image: 
+          linear-gradient(
+            rgba(128, 0, 128, 0.65), 
+            rgba(128, 0, 128, 0.65)
+          ),
+          url('assets/images/red-background.jpg');
+        width: 100%;
+        background-position: center;
+      }
+      
+      #header-text {
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding: 150px 0;
       }
     </style>
   </head>
   <body>
-    <div id="hero" class="parallax">
-      <div class="nav-bar nav-bar-white">
+    <div>
+      <div class="nav-bar navbar-white">
         <a href="#"><h1 id="hero-title"><span class="bold">ANSWER</span> ME <span class="bold">WITH</span> MR <span class="bold">B</span></h1></a>
         <nav>
-          <a href="#" class="nav-link">Videos</a>
+          <a href="#" class="nav-link active">Videos</a>
           <a href="#" class="nav-link">Contact</a>
-          <a href="#" class="nav-link active">Home</a>
+          <a href="#" class="nav-link">Home</a>
         </nav>
       </div>
-      <div id="hero-text">
-        <h1 id="opener">Welcome to Answer Me With Mr B HQ!</h1>
-        <h3 class="font-300" style="margin-bottom: 30px;">Physics is true. Ya!</h3>
-        <a href="https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ" class="btn blue round" target="_blank">Visit on Youtube</a>
+      <div id="header" class="parallax">
+        <div id="header-text">
+          <h1 id="opener">National 5 - Refraction</h1>
+          <h3 class="font-300" style="margin-bottom: 30px;">Physics is true. Ya!</h3>
+        </div>
       </div>
     </div>
     <div id="page">
       <div id="welcome">
-        <h1 id="title">Welcome to the channel!</h1>
         <div class="videoWrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/A-bLSGP1gwU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4qLyP-tCDkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <a href="#" class="btn blue">View More</a>
       </div>
       <div id="subscribe">
         <span class="bold">Subscribe!</span> It will only take you 1984123 µs <a href="https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ?sub_confirmation=1" target="_blank" class="btn orange right">Subscribe</a>
-      </div>
-      <div id="contact" class="parallax">
-        <h1 class="center white font-400">Contact Mr B</h1>
-        <form id="contact-form" method="get">
-          <label for="fname">Name:</label>
-          <input type="text" id="fname" name="name" placeholder="Name" required>
-          <label for="fname">Email:</label>
-          <input type="email" id="femail" name="email" placeholder="Email" required>
-          <label for="fmessage">Your message:</label>
-          <textarea id="fmessage" name="message" placeholder="Say hello..." style="height:200px" required></textarea>
-
-          <input type="submit" value="Send" class="btn blue square">
-        </form>
       </div>
     </div>
     <footer>
