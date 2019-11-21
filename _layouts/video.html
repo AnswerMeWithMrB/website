@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <link href="{{ '/style.css' | relative_url }}" rel="stylesheet">
     <style type="text/css">
-      
     </style>
   </head>
   <body>
@@ -36,8 +35,8 @@
     </div>
     <div id="page">
       <div id="buttons">
-        <a href="{{ out_previousVideo.url | relative_url | default: '#' }}" class="btn left blue round {% if out_previousVideo == null %}disabled{% endif %}">Previous</a>
-        <a href="{{ out_nextVideo.url | relative_url | default: '#; }}" class="btn right blue round {% if out_nextVideo == null %}disabled{% endif %}">Next</a>
+        <a href="{{ out_previousVideo.url | relative_url | default: '#' }}" class="btn left blue round" {% if out_previousVideo == null %}disabled{% endif %}>Previous</a>
+        <a href="{{ out_nextVideo.url | relative_url | default: '#; }}" class="btn right blue round" {% if out_nextVideo == null %}disabled{% endif %}>Next</a>
       </div>
       <div id="welcome">
         <div class="videoWrapper">
