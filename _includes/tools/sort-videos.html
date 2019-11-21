@@ -1,0 +1,14 @@
+{% comment %}
+  Sorts videos based on the order property and optionally filters them.
+  Code adapted from codingtrain (https://github.com/CodingTrain/website/).
+
+  Parameters:
+    videos Video[]              Array of videos that will be sorted.
+
+  Returns:
+    out_sortedVideos Video[]    Array of sorted videos.
+{% endcomment %}
+
+
+
+{% assign out_sortedVideos = int_videos | where: 'layout', 'video' | sort: 'video_number' %}
