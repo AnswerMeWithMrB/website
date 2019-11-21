@@ -11,4 +11,4 @@
 
 
 
-{% assign out_sortedVideos = int_videos | where: 'layout', 'video' | sort: 'order' %}
+{% assign out_sortedVideos = include.videos | where: 'layout', 'video' | sort: 'order' %}
