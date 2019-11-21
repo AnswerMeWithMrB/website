@@ -19,6 +19,11 @@
         cursor: default;
       }
       
+      .video {
+        display: block;
+        margin-top: 20px;
+      }
+      
       #pn-buttons {
         width: 60%;
         margin: auto;
@@ -53,8 +58,10 @@
         <a href="{{ out_nextVideo.url | relative_url | default: 'javascript:void(0)'; }}" class="btn right blue round {% if out_nextVideo == null %}disabled{% endif %}">Next</a>
       </div>
       <div id="welcome">
-        <div class="videoWrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.videoId }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video">
+          <div class="videoWrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.videoId }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
       <div id="subscribe">
