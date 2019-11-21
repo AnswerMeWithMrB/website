@@ -1,3 +1,10 @@
+{% comment %} Get all videos in this collection. {% endcomment %}
+{% assign videos = site[page.collection] %}
+
+{% comment %} Sort videos and get previous/next videos. {% endcomment %}
+{% include tools/sort-videos.html videos=videos %}
+{% include tools/previous-next.html videos=out_sortedVideos currentVideo=page %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,6 +36,8 @@
     </div>
     <div id="page">
       <div id="welcome">
+        <a href="{{ out_previousVideo.url | relative_url | default: '#' }}" class="btn {% if out_previousVideo == null %}disabled{% endif %}">Previous</a>
+        <a href="{{ out_nextVideo.url | relative_url | default: '#; }}" class="btn {% if out_nextVideo == null %}disabled{% endif %}">Next</a>
         <div class="videoWrapper">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.videoId }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
