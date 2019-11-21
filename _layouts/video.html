@@ -35,9 +35,11 @@
       </div>
     </div>
     <div id="page">
-      <div id="welcome">
+      <div id="buttons">
         <a href="{{ out_previousVideo.url | relative_url | default: '#' }}" class="btn left blue round {% if out_previousVideo == null %}disabled{% endif %}">Previous</a>
         <a href="{{ out_nextVideo.url | relative_url | default: '#; }}" class="btn right blue round {% if out_nextVideo == null %}disabled{% endif %}">Next</a>
+      </div>
+      <div id="welcome">
         <div class="videoWrapper">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.videoId }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
