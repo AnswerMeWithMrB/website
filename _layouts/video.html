@@ -18,6 +18,10 @@
         opacity: 0.5;
         cursor: default;
       }
+      
+      #pn-buttons {
+        width: 60%;
+      }
     </style>
   </head>
   <body>
@@ -38,7 +42,7 @@
       </div>
     </div>
     <div id="page">
-      <div id="buttons">
+      <div id="pn-buttons">
         <a href="{{ out_previousVideo.url | relative_url | default: 'javascript:void(0)' }}" class="btn left blue round {% if out_previousVideo == null %}disabled{% endif %}">Previous</a>
         <a href="{{ out_nextVideo.url | relative_url | default: 'javascript:void(0)'; }}" class="btn right blue round {% if out_nextVideo == null %}disabled{% endif %}">Next</a>
       </div>
