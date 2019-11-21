@@ -221,3 +221,33 @@ form input[type=submit] {
   background-color: #ff9800;
   color: white;
 }
+
+.navbar-white {
+  background-color: white;
+}
+
+.navbar-white a {
+  color: black;
+}
+
+.navbar-white #hero-title {
+  color: black;
+}
+
+#header {
+  background-image: 
+    linear-gradient(
+      rgba(128, 0, 128, 0.65), 
+      rgba(128, 0, 128, 0.65)
+    ),
+    url('assets/images/red-background.jpg');
+  width: 100%;
+  background-position: center;
+}
+
+#header-text {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 150px 0;
+}
