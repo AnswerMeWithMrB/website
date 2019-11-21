@@ -191,6 +191,10 @@ form input[type=submit] {
   font-weight: 300;
 }
 
+.left {
+  float: left;
+}
+
 .right {
   float: right;
 }
