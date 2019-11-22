@@ -33,6 +33,15 @@ collections:
   National5Teaching:
     output: true
     permalink: /videos/national5/teaching/:name
+  National5Music:
+    output: true
+    permalink: /videos/national5/music/:name
+  HigherTeaching:
+    output: true
+    permalink: /videos/higher/teaching/:name
+  HigherMusic:
+    output: true
+    permalink: /videos/higher/music/:name
 
 # Build settings
 theme: minima
