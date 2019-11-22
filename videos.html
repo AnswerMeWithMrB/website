@@ -1,5 +1,13 @@
 ---
-layout: home
+layout: default
+title: My Page
 ---
 
-<p>test</p>
+{% for staff_member in site.National5Teaching %}
+  <h2>
+    <a href="{{ staff_member.url }}">
+      {{ staff_member.level }} - {{ staff_member.title }}
+    </a>
+  </h2>
+  <p>{{ staff_member.content | markdownify }}</p>
+{% endfor %}
