@@ -8,5 +8,5 @@ layout: video
       {{ videos.level }} - {{ videos.title }}
     </a>
   </h2>
-  <p>{{ staff_member.content | markdownify }}</p>
+  <p>{{ videos.content | markdownify }}</p>
 {% endfor %}
