@@ -226,6 +226,11 @@ form input[type=submit] {
   color: white;
 }
 
+.btn.purple {
+  background-color: purple;
+  color: white;
+}
+
 .navbar-white {
   background-color: white;
 }
