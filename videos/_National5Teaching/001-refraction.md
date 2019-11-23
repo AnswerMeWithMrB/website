@@ -8,15 +8,15 @@ layout: video
 quiz:
   - question: "Physics is?"
     answers:
-      - a: true
-      - b: false
-      - c: true, ya
+      a: true
+      b: false
+      c: true, ya
     correct: c
   - question: "Somewhere within?"
     answers: 
-      - a: the rainbow
-      - b: the equations
-      - c: physics is true ya
+      a: the rainbow
+      b: the equations
+      c: physics is true ya
     correct: b
 ---
 

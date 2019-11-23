@@ -37,7 +37,7 @@ layout: subpage
         <h3 class="question">Question 1</h3>
         <p>{{ q.question }}</p>
         {% for a in q.answers %}
-        <span class="answer-holder"><input type="radio" name="1">{{ a[1] }}</span>
+        <span class="answer-holder"><input type="radio" name="1">{{ a }}</span>
         {% endfor %}
       </div>
       {% endfor %}
