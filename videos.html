@@ -15,7 +15,6 @@ layout: subpage
     {% for collection in collections %}
       {% if collection.label != "posts" %}
         <h2>{{ collection.title }}</h2>
-              {{ collection.order }}
         <div class="video-list">
           {% assign videos = site[collection.label] %}
           {% include tools/sort-videos.html videos=videos %}
