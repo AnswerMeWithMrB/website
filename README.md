@@ -1,4 +1,4 @@
-# AMWMB-website
+# Answer Me With Mr B - Website
 Welcome! Did you know, Physics is true ya!
 
 Here we have a Work In Progree website for the youtube channel [Answer Me With Mr B](https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ).
