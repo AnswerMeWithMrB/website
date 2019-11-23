@@ -11,13 +11,8 @@ layout: subpage
 </div>
 <div id="page">
   <div id="welcome">
-    {% for staff_member in site.National5Teaching %}
-      <h2>
-        <a href="{{ staff_member.url }}">
-          {{ staff_member.level }} - {{ staff_member.title }}
-        </a>
-      </h2>
-      <p>{{ staff_member.content | markdownify }}</p>
+    {% for video in site.National5Teaching %}
+      {% include modules/video-card.html video=video %}
     {% endfor %}
   </div>
   
