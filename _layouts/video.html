@@ -30,6 +30,7 @@ layout: subpage
       </div>
     </div>
   </div>
+  {% if page.quiz != null %}
   <div id="quiz-holder">
     <div id="quiz">
       {% assign qnum = 1 %}
@@ -49,3 +50,4 @@ layout: subpage
     <button id="submit">Submit Quiz</button>
     <div id="results"></div>
   </div>
+  {% endif %}
