@@ -12,7 +12,8 @@ layout: subpage
 <div id="page">
   <div id="welcome">
     <div class="video-list">
-      {% for video in site.National5Teaching %}
+      {% include tools/sort-videos.html videos=site.National5Teaching %}
+      {% for video in site.out_sortedVideos %}
         {% include modules/video-card.html video=video %}
       {% endfor %}
     </div>
