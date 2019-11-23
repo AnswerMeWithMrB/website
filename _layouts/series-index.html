@@ -12,8 +12,9 @@ layout: subpage
 <div id="page">
   <div id="welcome">
     <div class="video-list">
-      {% include tools/sort-videos.html videos=site[page.collection] %}
-      {% for video in site.out_sortedVideos %}
+      {% assign videos = site[page.collection] %}
+      {% include tools/sort-videos.html videos=videos %}
+      {% for video in out_sortedVideos %}
         {% include modules/video-card.html video=video %}
       {% endfor %}
     </div>
