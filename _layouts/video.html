@@ -37,7 +37,7 @@ layout: subpage
         <h3 class="question">Question 1</h3>
         <p>{{ q.question }}</p>
         {% for a in q.answers %}
-        {% comment %} This has to loop twice to iterate the key-value pair, why though? {% endcomment %}
+        
           {% for weird in a %}
           <span class="answer-holder"><input type="radio" name="1">{{ weird[1] }}</span>
           {% endfor %}
