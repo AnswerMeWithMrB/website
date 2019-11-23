@@ -40,6 +40,11 @@
       #quiz-holder {
         width: 60%;
         margin: auto;
+        text-align: center;
+      }
+      
+      .answer-holder {
+        display: block;
       }
     </style>
   </head>
@@ -67,7 +72,29 @@
         </div>
       </div>
       <div id="quiz-holder">
-        <div id="quiz"></div>
+        <div id="quiz">
+          <div class="question-holder">
+            <h3 class="question">Question 1</h3>
+            <p>Here is the first question?</p>
+            <span class="answer-holder"><input type="radio" name="1">Answer 1</span>
+            <span class="answer-holder"><input type="radio" name="1">Answer 1</span>
+            <span class="answer-holder"><input type="radio" name="1">Answer 1</span>
+          </div>
+          <div class="question-holder">
+            <h3 class="question">Question 1</h3>
+            <p>Here is the first question?</p>
+            <span class="answer-holder"><input type="radio" name="1">Answer 1</span>
+            <span class="answer-holder"><input type="radio" name="1">Answer 1</span>
+            <span class="answer-holder"><input type="radio" name="1">Answer 1</span>
+          </div>
+          <div class="question-holder">
+            <h3 class="question">Question 1</h3>
+            <p>Here is the first question?</p>
+            <span class="answer-holder"><input type="radio" name="1">Answer 1</span>
+            <span class="answer-holder"><input type="radio" name="1">Answer 1</span>
+            <span class="answer-holder"><input type="radio" name="1">Answer 1</span>
+          </div>
+        </div>
         <button id="submit">Submit Quiz</button>
         <div id="results"></div>
       </div>
