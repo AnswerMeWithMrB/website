@@ -11,15 +11,20 @@ layout: subpage
 </div>
 <div id="page">
   <div id="welcome">
-    {% for playlist in site.collections %}
-      <h2>{{ playlist.label }}</h2>
-      <div class="video-list">
-        {% assign videos = site[playlist.label] %}
-        {% include tools/sort-videos.html videos=videos %}
-        {% for video in out_sortedVideos %}
-          {% include modules/video-card.html video=video %}
-        {% endfor %}
-      </div>
+    {% assign collections = site.collections | sort: 'order' %}
+    {% for collection in collections %}
+      {% if collection.label != "posts" %}
+        <h2>{{ collection.title }}</h2>
+              {{ collection.order }}
+        <div class="video-list">
+          {% assign videos = site[collection.label] %}
+          {% include tools/sort-videos.html videos=videos %}
+          {% for video in out_sortedVideos limit:3 %}
+            {% include modules/video-card.html video=video %}
+          {% endfor %}
+        </div>
+        <a href="{{ collection.permalink | remove: ":name" }}" class="btn blue">View more</a>
+      {% endif %}
     {% endfor %}
     
   </div>
