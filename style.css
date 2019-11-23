@@ -255,3 +255,45 @@ form input[type=submit] {
   width: 100%;
   padding: 150px 0;
 }
+
+/* video-card style */
+/* [To Do]: In future move to sass and build with Jekyll in seperate modules */
+
+.video-card {
+  padding: 2rem;
+  width: 35rem;
+  box-shadow: 0 10px 20px #ffffff, 0 6px 6px #000000;
+  padding-bottom: 1em;
+  overflow: hidden;
+  margin: 3rem 0rem;
+  border-radius: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 250ms;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.thumb-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.video-badge {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: purple;
+  color: #FFF;
+  padding: .5em .5em .5em .6em;
+}
+
+.video-thumbnail {
+  width: 35rem;
+  height: auto;
+}
