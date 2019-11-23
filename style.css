@@ -283,6 +283,12 @@ form input[type=submit] {
   transform: translateY(-5px);
 }
 
+.video-header {
+  color: black;
+  text-decoration: none;
+  text-align: left;
+}
+
 .thumb-container {
   width: 100%;
   height: auto;
@@ -296,6 +302,7 @@ form input[type=submit] {
   background: purple;
   color: #FFF;
   padding: .5em .5em .5em .6em;
+  border-top-left-radius: 5px;
 }
 
 .video-thumbnail {
