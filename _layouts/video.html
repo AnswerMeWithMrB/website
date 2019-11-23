@@ -38,3 +38,18 @@ layout: subpage
     <button id="submit">Submit Quiz</button>
     <div id="results"></div>
   </div>
+  <div id="quiz-holder">
+    <div id="quiz">
+      {% for q in page.quiz %}
+      <div class="question-holder">
+        <h3 class="question">Question 1</h3>
+        <p>{{ q.question }}</p>
+        {% for a in q.answers %}
+        <span class="answer-holder"><input type="radio" name="1">{{ a }}</span>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
+  </div>
