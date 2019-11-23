@@ -259,6 +259,10 @@ form input[type=submit] {
 /* video-card style */
 /* [To Do]: In future move to sass and build with Jekyll in seperate modules */
 
+.video-list {
+  display: flex;
+}
+
 .video-card {
   padding: 2rem;
   width: 35rem;
