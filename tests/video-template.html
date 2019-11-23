@@ -5,7 +5,7 @@
 
     <title>Answer Me With Mr B</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
     <style type="text/css">
       .navbar-white {
         background-color: white;
@@ -25,7 +25,7 @@
             rgba(128, 0, 128, 0.65), 
             rgba(128, 0, 128, 0.65)
           ),
-          url('assets/images/red-background.jpg');
+          url('../assets/images/red-background.jpg');
         width: 100%;
         background-position: center;
       }
@@ -35,6 +35,11 @@
         text-align: center;
         width: 100%;
         padding: 150px 0;
+      }
+      
+      #quiz-holder {
+        width: 60%;
+        margin: auto;
       }
     </style>
   </head>
@@ -60,6 +65,11 @@
         <div class="videoWrapper">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/4qLyP-tCDkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+      </div>
+      <div id="quiz-holder">
+        <div id="quiz"></div>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
       </div>
       <div id="subscribe">
         <span class="bold">Subscribe!</span> It will only take you 1984123 µs <a href="https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ?sub_confirmation=1" target="_blank" class="btn orange right">Subscribe</a>
