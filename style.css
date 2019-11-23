@@ -298,8 +298,6 @@ form input[type=submit] {
 }
 
 .video-thumbnail {
-  width: 35rem;
-  height: 19.6875rem;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: auto;
 }

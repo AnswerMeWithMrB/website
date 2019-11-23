@@ -16,15 +16,7 @@ Adapted from the Coding Train website (https://github.com/CodingTrain/website/)
 
         {% comment %} The video badge (with its number). {% endcomment %}
         <span class="video-badge">#{{ include.video.order }}</span>
-
-        <div
-          class="video-thumbnail"
-
-          {% if include.video.videoId %}
-            style="background-image: url(https://i.ytimg.com/vi/{{include.video.videoId}}/mqdefault.jpg)"
-          {% endif %}
-        >
-        </div>
+        <img class="video-thumbnail" src="https://i.ytimg.com/vi/{{include.video.videoId}}/mqdefault.jpg">
       </div>
 
       {% comment %} Video title. {% endcomment %}
