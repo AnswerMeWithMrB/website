@@ -31,14 +31,6 @@ layout: subpage
     </div>
   </div>
   <div id="quiz-holder">
-    {% for q in page.quiz %}
-      {{ q.question }} {{ q.answer }}
-    {% endfor %}
-    <div id="quiz"></div>
-    <button id="submit">Submit Quiz</button>
-    <div id="results"></div>
-  </div>
-  <div id="quiz-holder">
     <div id="quiz">
       {% for q in page.quiz %}
       <div class="question-holder">

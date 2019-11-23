@@ -13,10 +13,11 @@ quiz:
       - c: true, ya
     correct: c
   - question: "Somewhere within?"
-    answer: b
-    a: the rainbow
-    b: the equations
-    c: physics is true ya
+    answers: 
+      - a: the rainbow
+      - b: the equations
+      - c: physics is true ya
+    correct: b
 ---
 
 Shall I shed some light on the matter?
