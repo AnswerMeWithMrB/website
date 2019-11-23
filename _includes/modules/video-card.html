@@ -1,0 +1,49 @@
+{% comment %}
+  This module displays a nice card for the given video.
+  It includes the video's thumbnail, title, release-date, short description
+  (excerpt) as well as links to YouTube and the internal video page.
+Adapted from the Coding Train website (https://github.com/CodingTrain/website/)
+
+  Parameters:
+    - video Video     The video to display.
+{% endcomment %}
+
+<div class="video-card">
+  <a href="{{ include.video.url | relative_url }}">
+    {% comment %} Video thumbnail. {% endcomment %}
+    <div class="video-header">
+      <div class="thumb-container">
+
+        {% comment %} The video badge (with its number). {% endcomment %}
+        <span class="video-badge">#{{ include.video.order }}</span>
+
+        <div
+          class="video-thumbnail"
+
+          {% if include.video.videoId %}
+            style="background-image: url(https://i.ytimg.com/vi/{{include.video.videoId}}/mqdefault.jpg)"
+          {% endif %}
+        >
+        </div>
+      </div>
+
+      {% comment %} Video title. {% endcomment %}
+      <h3>{{ include.video.title | xml_escape }}</h3>
+    </div>
+  </a>
+
+  {% comment %} Short description/excerpt. {% endcomment %}
+  <div class="video-description">
+    {{ include.video.content }}
+  </div>
+
+  {% comment %} CTAs (link to YouTube). {% endcomment %}
+  <div class="buttons">
+    <a href="https://youtu.be/{{ include.video.videoId }}"
+       aria-label="Watch on Youtube: {{ include.video.title | xml_escape }}"
+    >
+      Watch on YT<span class="sr-only">: {{ include.video.title | xml_escape }}</span>
+    </a>
+
+  </div>
+</div>
