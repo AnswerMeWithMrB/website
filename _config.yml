@@ -30,18 +30,22 @@ collections_dir: videos
 collections:
   National5Teaching:
     title: "National 5 Teaching"
+    order: 1
     output: true
     permalink: /videos/national5/teaching/:name
   National5Music:
     title: "National 5 Music"
+    order: 2
     output: true
     permalink: /videos/national5/music/:name
   HigherTeaching:
     title: "Higher Teaching"
+    order: 3
     output: true
     permalink: /videos/higher/teaching/:name
   HigherMusic:
     title: "Higher Music"
+    order: 4
     output: true
     permalink: /videos/higher/music/:name
 
