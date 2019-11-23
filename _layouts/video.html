@@ -14,7 +14,6 @@ layout: subpage
   <div id="header" class="parallax">
     <div id="header-text">
       <h1 id="opener">{{ page.level }} - {{ page.title }}</h1>
-      <h1>{{ page.activities.quiz.title }}</h1>
       <h3 class="font-300" style="margin-bottom: 30px;">{{ page.content }}</h3>
     </div>
   </div>
@@ -32,6 +31,9 @@ layout: subpage
     </div>
   </div>
   <div id="quiz-holder">
+    {% for q in page.quiz %}
+      {{ q.question }} {{ q.answer }}
+    {% endfor %}
     <div id="quiz"></div>
     <button id="submit">Submit Quiz</button>
     <div id="results"></div>
