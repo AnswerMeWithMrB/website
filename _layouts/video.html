@@ -1,3 +1,7 @@
+---
+layout: subpage
+---
+
 {% comment %} Get all videos in this collection. {% endcomment %}
 {% assign videos = site[page.collection] %}
 
@@ -5,70 +9,18 @@
 {% include tools/sort-videos.html videos=videos %}
 {% include tools/previous-next.html videos=out_sortedVideos currentVideo=page %}
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
 
-    <title>Answer Me With Mr B</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-    <link href="{{ '/style.css' | relative_url }}" rel="stylesheet">
-    <style type="text/css">
-      .btn.disabled {
-        opacity: 0.5;
-        cursor: default;
-      }
-      
-      .video {
-        display: block;
-        margin-top: 50px;
-      }
-      
-      #pn-buttons {
-        width: 60%;
-        margin: auto;
-      }
-      
-      #welcome {
-        margin-top: 40px;
-      }
-    </style>
-  </head>
-  <body>
-    <div>
-      <div class="nav-bar navbar-white">
-        <a href="{{ '/' | relative_url }}"><h1 id="hero-title"><span class="bold">ANSWER</span> ME <span class="bold">WITH</span> MR <span class="bold">B</span></h1></a>
-        <nav>
-          <a href="#" class="nav-link active">Videos</a>
-          <a href="#" class="nav-link">Contact</a>
-          <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
-        </nav>
-      </div>
-      <div id="header" class="parallax">
-        <div id="header-text">
-          <h1 id="opener">{{ page.level }} - {{ page.title }}</h1>
-          <h3 class="font-300" style="margin-bottom: 30px;">{{ content }}</h3>
-        </div>
-      </div>
+<div id="pn-buttons">
+  <a href="{{ out_previousVideo.url | relative_url | default: 'javascript:void(0)' }}" class="btn left blue round {% if out_previousVideo == null %}disabled{% endif %}">Previous</a>
+  <a href="{{ out_nextVideo.url | relative_url | default: 'javascript:void(0)'; }}" class="btn right blue round {% if out_nextVideo == null %}disabled{% endif %}">Next</a>
+</div>
+<div id="welcome">
+  <div class="video">
+    <div class="videoWrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.videoId }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div id="page">
-      <div id="pn-buttons">
-        <a href="{{ out_previousVideo.url | relative_url | default: 'javascript:void(0)' }}" class="btn left blue round {% if out_previousVideo == null %}disabled{% endif %}">Previous</a>
-        <a href="{{ out_nextVideo.url | relative_url | default: 'javascript:void(0)'; }}" class="btn right blue round {% if out_nextVideo == null %}disabled{% endif %}">Next</a>
-      </div>
-      <div id="welcome">
-        <div class="video">
-          <div class="videoWrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.videoId }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      <div id="subscribe">
-        <span class="bold">Subscribe!</span> It will only take you 1984123 µs <a href="https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ?sub_confirmation=1" target="_blank" class="btn orange right">Subscribe</a>
-      </div>
-    </div>
-    <footer>
-      &copy; 2019 Answer Me With Mr B.
-    </footer>
-  </body>
-</html>
+  </div>
+</div>
+<div id="subscribe">
+  <span class="bold">Subscribe!</span> It will only take you 1984123 µs <a href="https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ?sub_confirmation=1" target="_blank" class="btn orange right">Subscribe</a>
+</div>

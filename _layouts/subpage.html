@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Answer Me With Mr B</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="{{ '/style.css' | relative_url }}" rel="stylesheet">
+    <style type="text/css">
+      .btn.disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+      
+      .video {
+        display: block;
+        margin-top: 50px;
+      }
+      
+      #pn-buttons {
+        width: 60%;
+        margin: auto;
+      }
+      
+      #welcome {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="nav-bar navbar-white">
+        <a href="{{ '/' | relative_url }}"><h1 id="hero-title"><span class="bold">ANSWER</span> ME <span class="bold">WITH</span> MR <span class="bold">B</span></h1></a>
+        <nav>
+          <a href="#" class="nav-link active">Videos</a>
+          <a href="#" class="nav-link">Contact</a>
+          <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+        </nav>
+      </div>
+      <div id="header" class="parallax">
+        <div id="header-text">
+          <h1 id="opener">{{ page.level }} - {{ page.title }}</h1>
+          <h3 class="font-300" style="margin-bottom: 30px;">{{ content }}</h3>
+        </div>
+      </div>
+    </div>
+    <div id="page">
+      {{ page.content }}
+    </div>
+    <footer>
+      &copy; 2019 Answer Me With Mr B.
+    </footer>
+  </body>
+</html>
