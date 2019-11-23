@@ -34,7 +34,7 @@ collections:
     output: true
     permalink: /videos/national5/teaching/:name
   National5Music:
-    title: "National 5 Music"
+    title: "National 5 Music Videos"
     order: 2
     output: true
     permalink: /videos/national5/music/:name
@@ -44,7 +44,7 @@ collections:
     output: true
     permalink: /videos/higher/teaching/:name
   HigherMusic:
-    title: "Higher Music"
+    title: "Higher Music Videos"
     order: 4
     output: true
     permalink: /videos/higher/music/:name
