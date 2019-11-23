@@ -21,7 +21,7 @@ layout: subpage
 <div id="page">
   <div id="pn-buttons">
     <a href="{{ out_previousVideo.url | relative_url | default: 'javascript:void(0)' }}" class="btn left blue round {% if out_previousVideo == null %}disabled{% endif %}">Previous</a>
-    <a href="{{ out_nextVideo.url | relative_url | default: 'javascript:void(0)'; }}" class="btn right blue round {% if out_nextVideo == null %}disabled{% endif %}">Next</a>
+    <a href="{{ out_nextVideo.url | relative_url | default: 'javascript:void(0)' }}" class="btn right blue round {% if out_nextVideo == null %}disabled{% endif %}">Next</a>
   </div>
   <div id="welcome">
     <div class="video">
@@ -36,9 +36,7 @@ layout: subpage
       <div class="question-holder">
         <h3 class="question">Question 1</h3>
         <p>{{ q.question }}</p>
-        {{ q.answers }}
         {% for a in q.answers %}
-        {{ a }}
           {% for weird in a %}
           <span class="answer-holder"><input type="radio" name="1">{{ weird[1] }}</span>
           {% endfor %}
