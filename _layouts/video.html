@@ -9,6 +9,8 @@ layout: subpage
 {% include tools/sort-videos.html videos=videos %}
 {% include tools/previous-next.html videos=out_sortedVideos currentVideo=page %}
 
+{% include tools/quiz.html %}
+
   <div id="header" class="parallax">
     <div id="header-text">
       <h1 id="opener">{{ page.level }} - {{ page.title }}</h1>
@@ -27,4 +29,9 @@ layout: subpage
         <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.videoId }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
+  </div>
+  <div id="quiz-holder">
+    <div id="quiz"></div>
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
   </div>
