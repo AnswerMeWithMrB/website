@@ -1,0 +1,25 @@
+---
+layout: subpage
+---
+
+<div id="header" class="parallax">
+    <div id="header-text">
+      <h1 id="opener">Videos</h1>
+      <h3 class="font-300" style="margin-bottom: 30px;">Physics is true, ya!</h3>
+    </div>
+  </div>
+</div>
+<div id="page">
+  <div id="welcome">
+    {% for playlist in site.collections %}
+      <h2>{{ playlist.label }}</h2>
+      <div class="video-list">
+        {% assign videos = site[playlist.label] %}
+        {% include tools/sort-videos.html videos=videos %}
+        {% for video in out_sortedVideos %}
+          {% include modules/video-card.html video=video %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+    
+  </div>
