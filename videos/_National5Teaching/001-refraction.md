@@ -7,10 +7,11 @@ layout: video
 
 quiz:
   - question: "Physics is?"
-    answer: c
-    a: true
-    b: false
-    c: true, ya
+    answers:
+      - a: true
+      - b: false
+      - c: true, ya
+    correct: c
   - question: "Somewhere within?"
     answer: b
     a: the rainbow
