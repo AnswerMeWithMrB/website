@@ -29,15 +29,19 @@ collections_dir: videos
 
 collections:
   National5Teaching:
+    title: "National 5 Teaching"
     output: true
     permalink: /videos/national5/teaching/:name
   National5Music:
+    title: "National 5 Music"
     output: true
     permalink: /videos/national5/music/:name
   HigherTeaching:
+    title: "Higher Teaching"
     output: true
     permalink: /videos/higher/teaching/:name
   HigherMusic:
+    title: "Higher Music"
     output: true
     permalink: /videos/higher/music/:name
 
