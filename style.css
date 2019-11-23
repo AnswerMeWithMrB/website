@@ -270,7 +270,7 @@ form input[type=submit] {
   box-shadow: 0 10px 20px #ffffff, 0 6px 6px #000000;
   padding-bottom: 1em;
   overflow: hidden;
-  margin: 3rem 0rem;
+  margin: 3rem;
   border-radius: 20px;
   
   display: flex;
