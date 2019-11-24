@@ -3,6 +3,7 @@ body, html {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -72,6 +73,23 @@ form input[type=submit] {
   cursor: pointer;
 }
 
+.arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
 .parallax {
   background-attachment: fixed;
   background-position: center;
@@ -84,7 +102,7 @@ form input[type=submit] {
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
-
+  margin-bottom: 40px;
 }
 .videoWrapper iframe {
   position: absolute;
@@ -131,6 +149,12 @@ form input[type=submit] {
   margin: auto;
   text-align: center;
   padding: 40px 0;
+}
+
+#pn-buttons {
+  display: block;
+  width: 60%;
+  position: relative;
 }
 
 #subscribe {
@@ -229,6 +253,12 @@ form input[type=submit] {
 .btn.purple {
   background-color: purple;
   color: white;
+}
+
+.btn.center {
+  position: absolute; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
 }
 
 .navbar-white {
