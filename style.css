@@ -439,3 +439,15 @@ input.radio:checked ~ label {
 input.radio:focus ~ label:before {
 	box-shadow: 0 0 0 3px #999;
 }
+
+input.radio.green:checked ~ label:before {
+  text-indent: .9em;
+	color: #9CE2AE;
+	background-color: green;
+}
+
+input.radio.red:checked ~ label:before {
+  text-indent: .9em;
+	color: #9CE2AE;
+	background-color: red;
+}
