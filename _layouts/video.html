@@ -20,8 +20,9 @@ layout: subpage
 </div>
 <div id="page">
   <div id="pn-buttons">
-    <a href="{{ out_previousVideo.url | relative_url | default: 'javascript:void(0)' }}" class="btn left blue round {% if out_previousVideo == null %}disabled{% endif %}">Previous</a>
-    <a href="{{ out_nextVideo.url | relative_url | default: 'javascript:void(0)' }}" class="btn right blue round {% if out_nextVideo == null %}disabled{% endif %}">Next</a>
+    <a href="{{ out_previousVideo.url | relative_url | default: 'javascript:void(0)' }}" class="btn blue round {% if out_previousVideo == null %}disabled{% endif %}" style="position: absolute; left: 0;">Previous</a>
+    <a href="{{ out_nextVideo.url | relative_url | default: 'javascript:void(0)' }}" class="btn blue round {% if out_nextVideo == null %}disabled{% endif %}" style="position: absolute; right: 0;">Next</a>
+    <a href="." class="btn purple center">View all</a>
   </div>
   <div id="welcome">
     <div class="video">

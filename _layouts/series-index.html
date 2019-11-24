@@ -11,12 +11,14 @@ layout: subpage
 </div>
 <div id="page">
   <div id="welcome">
-    <div class="video-list">
+    <a href="{{ '/videos' | relative_url }}" class="btn purple center">View all</a>
+    <div class="video-list" style="margin-top: 40px;">
       {% assign videos = site[page.collection] %}
       {% include tools/sort-videos.html videos=videos %}
       {% for video in out_sortedVideos %}
         {% include modules/video-card.html video=video %}
       {% endfor %}
     </div>
+    <a href="{{ '/videos' | relative_url }}" class="btn purple center">View all</a>
   </div>
   
