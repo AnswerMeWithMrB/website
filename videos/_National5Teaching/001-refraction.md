@@ -16,7 +16,8 @@ quiz:
     answers: 
       - a: the rainbow
       - b: the equations
-      - c: physics is true ya
+      - c: physics is true
+      - d: ya
     correct: b
 ---
 
