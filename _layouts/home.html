@@ -42,7 +42,7 @@
       </div>
       <div id="contact" class="parallax">
         <h1 class="center white font-400">Contact Mr B</h1>
-        <form id="contact-form" method="get">
+        <form id="contact-form" method="post" action="{{ '/contact-post.php' | relative_url }}">
           <label for="fname">Name:</label>
           <input type="text" id="fname" name="name" placeholder="Name" required>
           <label for="fname">Email:</label>
