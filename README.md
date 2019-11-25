@@ -27,14 +27,15 @@ P.s. if you're looking to improve your Open Source skills, and it's coming up to
 ## Formatting
 
 ### New Video
-In the [videos](videos/) directory you will find 4 more directories:
+
+In the [videos](videos/) directory you will find the 4 directories listed below:
 
 - _National5Teaching
 - _National5Music
 - _HigherTeaching
 - _HigherMusic
 
-In each of these is a list of files, here is an example:
+Each of theses represents a playlist on the AMWMB channel. In each of these directories, there is a list of files, here is an example:
 
 - 001-video-title.md
 - 002-video-title.md
@@ -42,7 +43,7 @@ In each of these is a list of files, here is an example:
 - 004-video-title.md
 - index.md
 
-If you wish to help by adding a new video, create a new video with the format below:
+If you wish to help by adding a new video, create a new file with the format below:
 
 > ###-video-title.md
 
@@ -80,3 +81,94 @@ Here is what each of these means:
   
   
 Once you have saved, you can submit your pull request and the video shall be live on the site in a few minutes!
+
+### New Playlist
+
+If you're ready for something a bit more advanced, and you've noticed that Mr B has created a new playlist on the channel, have a go at setting up the new playlist for all to see.
+
+First, you will need to create a new directory within [videos](videos/).
+
+This must be formatted as so:
+
+> _PlaylistName
+
+Please note the underscore at the beginning, and the use of UpperCamelCase for the name. Remember this, as you will need to use this exactly later.
+
+Next, you will need to create a file inside the directory you just created.
+
+> index.md
+
+Inside this new file, you should copy and paste the following text:
+
+```
+---
+layout: series-index
+---
+```
+
+- layout
+  - This should stay as series-index in all cases. If not, you should definetly know what you are doing.
+
+Once you have the directory setup, you can start to add video files. To do this, view [How to Format New Videos](#new-video).
+
+Finally, you will need to configure the [_config.yml](_config.yml) file to accept the new playlist.
+
+Under `Collections:` you should add the following template:
+
+```
+[Playlist name]:
+    title: "National 5 Teaching"
+    order: 1
+    output: true
+    permalink: /videos/national5/teaching/:name
+```
+
+- [Playlist name]
+  - This must be EXACTLY the same as you named the directory above, WITHOUT THE UNDERSCORE(_).
+- title
+  - This is a string for the title of the playlist as it should be displayed.
+- order
+  - This is the order that the playlists are displayed on the [videos](answermewithmrb.tk/videos) page. Bad things happen if it's the same as another playlist?
+- output
+  - This should be true, just trust me.
+- permalink
+  - This is the link for each video in the playlist. Generally, this should start with `/videos` followed by something else, this should be ended with `:name`, this will be the name of the file of the video.
+  
+  And you're done! It seems that you have completed one of the harder tasks in managing this website. If you haven't already, maybe it's time to start taking a look at the [code behind the site](#writing-code)...
+
+
+## Writing code
+
+Anyone who knows me, IRL, will know that I'm pretty strict when it comes to organising and presenting. CODE IS NO DIFFERENT. Follow some key tips below for how to layout your code nicely.
+
+### Indentation
+
+You know that button on your keyboard? Yeah the one that says TAB. TABS SHOULD ALWAYS BE USED WITH HTML. ALWAYS.
+
+If you're looking for extra brownie points, try to set your tab size to 2 spaces. This makes the gaps not look weird.
+
+### Variable & File names
+
+If you're like a certain person I know, cough cough, sometimes you think it acceptable to use weird or convenient variable or file names whenever it suits you. IT IS NOT.
+
+Always try to use names that are meaningful and will help you when you are debuging, or when you have finished your 1000000 line of code project and can't remember what `banana` variable does...
+
+Also, think about the other people you are working with on GitHub, making things READABLE is a necessity. Speaking of readability...
+
+### Comments
+
+We all do it. Sometimes you get lost in the thrill of writing code, however, remember that on GitHub, other people need to be able to use your code.
+
+When possible, try to add some comments to help people understand what you have been writing.
+
+Here are some of the common comment formats:
+
+```
+<!-- This is an HTML comment -->
+
+/* This is a CSS comment */
+
+// This is a JS comment
+
+{% comment %} This is a liquid comment, if you ever use one of these, it means you're doing something pretty integral for the site {% endcomment %}
+```
