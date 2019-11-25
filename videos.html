@@ -23,7 +23,7 @@ layout: subpage
               {% include modules/video-card.html video=video %}
             {% endfor %}
           </div>
-          <a href="{{ '/' | relative_url }}{{ collection.permalink | remove: ":name" }}" class="btn blue">View more</a>
+          <a href="{{ collection.permalink | remove: ":name" }}" class="btn blue">View more</a>
         </div>
       {% endif %}
     {% endfor %}
