@@ -248,6 +248,6 @@ Making a small game or animation for each video could be a really cool idea in o
 
 ## Your Ideas
 
-Have a cool idea. I'm all ears! Head over to the issues tab at the top of the page and write out a message. Once Mr B gives the go ahead, we'll get on it!
+Have a cool idea? I'm all ears! Head over to the issues tab at the top of the page and write out a message. Once Mr B gives the go ahead, we'll get on it!
 
 But in the meantime, how about YOU be the one to implement your idea. Take a look at [How to GitHub](#how-to-github), and how we format the pages on the site: [Formatting](#formatting).
