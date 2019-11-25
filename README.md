@@ -14,7 +14,7 @@ New to GitHub? Have a look at this link to see how it all works.
 
 ## How to Github
 
-So, you're new to GitHub, eh? Welcome! Github is a platform in which programmers from all over the world share there code to be enjoyed by the masses, for free! Here, we use it in order for many people to collaborate together to manage the AMWMB website.
+So, you're new to GitHub, eh? Welcome! Github is a platform in which programmers from all over the world share their code to be enjoyed by the masses, for free! Here, we use it in order for many people to collaborate together to manage the AMWMB website.
 
 Github can be very confusing when you first start. If you can manage a quick paced lesson, check out The Coding Train's tutorial [Git and GitHub for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV) to get started. Video 1.1 is a useful introduction to GitHub, but video 1.3 will help you out the most here.
 
@@ -22,7 +22,7 @@ All right, you're good to go! If you're looking to start out small, have a look 
 
 Good luck, and happy coding!
 
-P.s. if you're looking to improve your Open Source skills, and it's coming up to October, why not check out [Hacktoberfest](https://hacktoberfest.digitalocean.com/). Running throughout the whole of October, if you complete 4 pull requests, you can earn a nifty t-shirt, shipped all the way from San Francisco, for free!
+P.s. if you're looking to improve your Open Source skills, and it's coming up to October, why not check out [Hacktoberfest](https://hacktoberfest.digitalocean.com/). Running throughout the whole of October, if you complete 4 pull requests, you can earn a nifty t-shirt, shipped all the way from San Francisco, completely free!
 
 ## Formatting
 
