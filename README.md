@@ -246,7 +246,7 @@ At the moment, there is the ability to add a quiz to the bottom of any video pag
 
 Making a small game or animation for each video could be a really cool idea in order to make the video more interactive.
 
-## You're Ideas
+## Your Ideas
 
 Have a cool idea. I'm all ears! Head over to the issues tab at the top of the page and write out a message. Once Mr B gives the go ahead, we'll get on it!
 
