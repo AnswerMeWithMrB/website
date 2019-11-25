@@ -9,8 +9,13 @@ Glad you're willing to help out!
 
 Have a look at the links below to begin contributing.
 
-New to GitHub? Have a look at this link to see how it all works.
-- [How to Github](#how-to-github)
+- [How to Github](#how-to-github).
+- [Formatting](#formatting)
+  - [New Video](#new-video)
+  - [New Playlist](#new-playlist)
+- [How It Works](#how-it-works)
+- [Writing Code](#writing-code)
+
 
 ## How to Github
 
@@ -137,13 +142,60 @@ Under `Collections:` you should add the following template:
   And you're done! It seems that you have completed one of the harder tasks in managing this website. If you haven't already, maybe it's time to start taking a look at the [code behind the site](#writing-code)...
 
 
-## Writing code
+## How It Works
 
-Anyone who knows me, IRL, will know that I'm pretty strict when it comes to organising and presenting. CODE IS NO DIFFERENT. Follow some key tips below for how to layout your code nicely.
+### Domain
+
+The domain for the site, [answermewithmrb.tk](http://answermewithmrb.tk), is provided by [Freenom](https://www.freenom.com/).
+
+This means that the domain is free, however it must be renewed every year. Please leave an issue if you have a query regarding this.
+
+### Hosting
+
+The site is hosted using GitHub Pages, this means that it is provided free of charge.
+
+Read on below to find out about GitHub pages.
+
+### GitHub Pages
+
+GitHub Pages is a free service offered by GitHub in order to host static websites.
+
+Find out more [here](https://pages.github.com/).
+
+GitHub Pages was chosen as it offers WONDERFUL integration with Jekyll, read on below to find out more...
+
+### Jekyll
+
+[Jekyll](https://jekyllrb.com/), is what powers GitHub pages.
+
+For our purposes, it is what allows the video pages to be rendered from just the data .md files.
+
+If you're looking for something more challenging to do, have a look at the [Jekyll Docs](https://jekyllrb.com/docs/) and try to make a new page.
+
+[ToDo] How about finding a way to display the most recent video on the home page. **WARNING - quite advanced!**
+
+### Liquid
+
+Liquid is a fancy way of inserting information into pages.
+
+This is how Jekyll inputs the data from the .md files.
+
+> {{ content }}
+
+This is an example of liquid syntax.
+
+There is way too much to explain here, but between the Jekyll docs and the liquid docs, I'm sure you can figure it out.
+
+- [Jekyll Liquid Docs](https://jekyllrb.com/docs/liquid/)
+- [Official Liquid Docs](https://shopify.github.io/liquid/)
+
+## Writing Code
+
+Anyone who knows me IRL, will know that I'm a stickler when it comes to organising and presenting. Ignore the handwriting. CODE IS NO DIFFERENT. Follow some key tips below for how to layout your code nicely.
 
 ### Indentation
 
-You know that button on your keyboard? Yeah the one that says TAB. TABS SHOULD ALWAYS BE USED WITH HTML. ALWAYS.
+You know that button on your keyboard? Yeah the one that says tab, or those two funky arrows. TABS SHOULD ALWAYS BE USED WITH HTML AND CSS AND JS AND EVERY CODING GOOD LANGAUAGE. ALWAYS.
 
 If you're looking for extra brownie points, try to set your tab size to 2 spaces. This makes the gaps not look weird.
 
