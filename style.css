@@ -261,6 +261,10 @@ form input[type=submit] {
   transform: translate(-50%, -50%);
 }
 
+.btn.big {
+  font-size: 1.5rem;
+}
+
 .navbar-white {
   background-color: white;
 }
