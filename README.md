@@ -1,10 +1,15 @@
 # Answer Me With Mr B - Website
 Welcome! Did you know, Physics is true ya!
 
-Here we have a Work In Progree website for the youtube channel [Answer Me With Mr B](https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ).
+Here we have a Work In Progress website for the YouTube channel [Answer Me With Mr B](https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ).
 
 If you wish to help out, view the [Contributing instructions](#contributing).
+
+- [Contributing](#contributing)
+- [The Future](#the-future)
+
 # Contributing
+
 Glad you're willing to help out!
 
 Have a look at the links below to begin contributing.
@@ -224,3 +229,25 @@ Here are some of the common comment formats:
 
 {% comment %} This is a liquid comment, if you ever use one of these, it means you're doing something pretty integral for the site {% endcomment %}
 ```
+
+# The Future
+
+There are many places that the AMWMB site could go, below are just a few ideas that you could many persue.
+
+## Astronomy
+
+There's endless possiblity when it comes to web developement. And one thing we can also manage, is to create more pages.
+
+Maybe branching AMWMB into the extra curricular could encourage more people into the realm of Physics.
+
+## Activities
+
+At the moment, there is the ability to add a quiz to the bottom of any video page. I would love for this functionality to be expanded.
+
+Making a small game or animation for each video could be a really cool idea in order to make the video more interactive.
+
+## You're Ideas
+
+Have a cool idea. I'm all ears! Head over to the issues tab at the top of the page and write out a message. Once Mr B gives the go ahead, we'll get on it!
+
+But in the meantime, how about YOU be the one to implement your idea. Take a look at [How to GitHub](#how-to-github), and how we format the pages on the site: [Formatting](#formatting).
