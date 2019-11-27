@@ -302,6 +302,10 @@ form input[type=submit] {
   border: none;
 }
 
+.btn.block {
+  display: block;
+}
+
 .btn.round {
   border-radius: 40px;
 }
