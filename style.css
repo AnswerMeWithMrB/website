@@ -17,6 +17,14 @@ nav {
   overflow: hidden;
 }
 
+/* Media query for navbar */
+@media only screen and (max-width: 800px) {
+  /* Hide links */
+  .nav-link {
+    display: none;
+  }
+}
+
 #hero-title {
   color: white;
   font-weight: 10;
