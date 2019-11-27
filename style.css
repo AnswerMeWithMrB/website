@@ -347,6 +347,12 @@ form input[type=submit] {
   color: black;
 }
 
+.body {
+  width: 60%;
+  margin: auto;
+  white-space: pre;
+}
+
 #header {
   background-image: 
     linear-gradient(
