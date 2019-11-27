@@ -2,6 +2,7 @@
 order: 1
 level: National 5
 title: Refraction
+description: Shall I shed some light on the matter?
 videoId: 4qLyP-tCDkI
 layout: video
 
@@ -20,5 +21,3 @@ quiz:
       - d: ya
     correct: b
 ---
-
-Shall I shed some light on the matter?
