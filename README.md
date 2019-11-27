@@ -64,11 +64,12 @@ Then copy, paste and fill out the following text:
 order: [Video number]
 level: [Academic level]
 title: [Video title]
+description: [Video description]
 videoId: [Video id]
 layout: video
 ---
 
-[Video description]
+[Extra content]
 ```
 
 Here is what each of these means:
@@ -79,6 +80,8 @@ Here is what each of these means:
   - This is the level that the video is aimed at (National 5 / Higher)
 - title
   - This is the title that the video has on youtube (ignore number)
+- description
+  - This is the description that the video has on youtube.
 - videoId
   - This is the id that the video is given by youtube. You can find it in the url eg:
     - youtube.com/watch?v=[videoId]
@@ -86,8 +89,9 @@ Here is what each of these means:
   - This is the layout that tell the site how to display the page. Leave this alone when adding a new video.
     - This will be removed and placed in a default config location in a later version.
     
-- [Video description]
-  - The line of text below the --- should be the description from the video on youtube.
+- [Extra content]
+  - Anything below the `---` line will be displayed on the page.
+  - This can be formatted as html.
   
   
 Once you have saved, you can submit your pull request and the video shall be live on the site in a few minutes!
