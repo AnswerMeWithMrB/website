@@ -7,7 +7,9 @@ videoId: ztKsRFrDhbc
 layout: video
 ---
 
-Physics Rule [To verify lyrics]
+<p>
+<u>Physics Rule [To verify lyrics]</u>
+
 We say that vectors convey both direction and magnitude,
 Combine them in a single line note the angle and you’re all good,
 Scalars like time and speed only have a size, it’s all they need,
@@ -52,3 +54,4 @@ The Big Bang,
 The universe’s origin,
 Oh Physics Rule,
 You are wonderful!
+</p>
