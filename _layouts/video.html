@@ -29,8 +29,9 @@ layout: subpage
       </div>
     </div>
   </div>
-  
-  {% if page.description != null %}{{ page.content }}{% endif %}
+  <div class="body">
+    {% if page.description != null %}{{ page.content }}{% endif %}
+  </div>
   
   {% if page.quiz != null %}
   <div id="quiz-holder">
