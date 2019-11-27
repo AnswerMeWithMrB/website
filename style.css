@@ -29,6 +29,7 @@ nav {
   }
 	
   .navbar-toggler {
+	  display: block;
   border: none;
   background: transparent !important;
   position: fixed;
