@@ -17,12 +17,68 @@ nav {
   overflow: hidden;
 }
 
+.navbar-toggler {
+  display: none;	
+}
+
 /* Media query for navbar */
 @media only screen and (max-width: 800px) {
   /* Hide links */
   .nav-link {
     display: none;
   }
+	
+  .navbar-toggler {
+  border: none;
+  background: transparent !important;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  z-index: 12;
+  transition: all 0.5s linear;
+}
+
+.icon-bar {
+  width: 22px; 
+  height: 2px;
+  background-color: #5D5D5D;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+  background-color: white;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+  background-color: white;
+}
+
+.navbar-toggler.hamburger .top-bar {
+  transform: rotate(0);
+  background-color: #5D5D5D;
+}
+
+.navbar-toggler.hamburger .middle-bar {
+  opacity: 1;
+  background-color: #5D5D5D;
+}
+
+.navbar-toggler.hamburger .bottom-bar {
+  transform: rotate(0);
+  background-color: #5D5D5D;
+}
 }
 
 #hero-title {
