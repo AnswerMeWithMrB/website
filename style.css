@@ -329,6 +329,11 @@ form input[type=submit] {
   color: white;
 }
 
+.btn.red {
+  background-color: red;
+  color: white;
+}
+
 .btn.center {
   position: absolute; 
   left: 50%; 
