@@ -330,7 +330,7 @@ form input[type=submit] {
 }
 
 .btn.red {
-  background-color: red;
+  background-color: #cc1500;
   color: white;
 }
 
