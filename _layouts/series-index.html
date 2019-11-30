@@ -11,7 +11,7 @@ layout: subpage
 </div>
 <div id="page">
   <div id="welcome" style="padding: 40px 0">
-    <a href="{{ '/videos' | relative_url }}" class="btn purple">View all</a>
+    <a href="{{ '/videos' | relative_url }}" class="btn purple center">View all</a>
     <div class="video-list">
       {% assign videos = site[page.collection] %}
       {% include tools/sort-videos.html videos=videos %}
@@ -19,6 +19,6 @@ layout: subpage
         {% include modules/video-card.html video=video %}
       {% endfor %}
     </div>
-    <a href="{{ '/videos' | relative_url }}" class="btn purple">View all</a>
+    <a href="{{ '/videos' | relative_url }}" class="btn purple center">View all</a>
   </div>
   
