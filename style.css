@@ -101,6 +101,10 @@ nav ul {
     transition: all 0.2s;
     margin-top: 4px;
   }
+  
+  .navbar-white .navbar-toggler.hamburger .icon-bar {
+    background-color: black;
+  }
 
   .white .icon-bar {
     background-color: white;
@@ -142,9 +146,6 @@ nav ul {
     box-shadow: none;
   }
   
-  .navbar-white .navbar-toggler .icon-bar {
-    background-color: black;
-  }
   
   nav {
     transform: translateX(100%);
@@ -627,5 +628,9 @@ input.radio.red:checked ~ label:before {
   
   #contact-form {
     width: 70%;
+  }
+  
+  #subscribe {
+    text-align: center;
   }
 } 
