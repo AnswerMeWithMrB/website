@@ -120,6 +120,10 @@ nav ul {
     box-shadow: none;
   }
   
+  .navbar-white .navbar-toggler .icon-bar {
+    background-color: black;
+  }
+  
   nav {
     transform: translateX(100%);
     position: fixed;
@@ -212,7 +216,7 @@ form input[type=submit] {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .videoWrapper {
