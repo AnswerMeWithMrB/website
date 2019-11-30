@@ -606,5 +606,8 @@ input.radio.red:checked ~ label:before {
   .video-card {
     width: 100%;
   }
+  
+  .parallax {
+    background-attachment: scroll;
+  }
 } 
-}
