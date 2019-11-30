@@ -73,6 +73,12 @@ nav ul {
   color: black;
 }
 
+#opener {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
 /* Media query for navbar */
 @media only screen and (max-width: 800px) {
   /* Hide links */
@@ -184,7 +190,11 @@ nav ul {
   }
   
   #hero-title {
-    margin: 10px;
+    margin: 15px;
+  }
+  
+  #opener {
+    font-size: 2rem;
   }
 }
 
@@ -252,12 +262,6 @@ form input[type=submit] {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-#opener {
-  font-size: 3rem;
-  font-weight: 300;
-  margin-bottom: 0px;
 }
 
 #hero {
