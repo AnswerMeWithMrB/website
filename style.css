@@ -81,10 +81,7 @@ nav ul {
 	  display: block;
     border: none;
     background: transparent !important;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 30px 30px;
+    margin: 10px;
     max-width: 300px;
     z-index: 12;
     transition: all 0.5s linear;
@@ -96,7 +93,7 @@ nav ul {
     background-color: white;
     display: block;
     transition: all 0.2s;
-    margin-top: 4px
+    margin-top: 4px;
   }
 
   .white .icon-bar {
@@ -166,6 +163,12 @@ nav ul {
   nav ul {
     flex-direction: column;
     margin: auto;
+  }
+  
+  .mobileMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
   .nav-link, .navbar-white .nav-link {
