@@ -50,8 +50,8 @@
     </div>
     {% include base/footer.html %}
     <script type="text/javascript">
-      document.querySelector('.navbar-toggler').onClick = function(e) {
-        document.querySelector('.mobileMenu').classList.toggle("open");
+      document.querySelector('.navbar-toggler').onclick = function(e) {
+        document.querySelector('nav').classList.toggle("open");
         document.querySelector('.navbar-toggler').classList.toggle("hamburger");
       }
     </script>
