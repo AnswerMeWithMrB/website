@@ -621,4 +621,8 @@ input.radio.red:checked ~ label:before {
   #welcome {
     width: 70%;
   }
+  
+  #contact-form {
+    width: 70%;
+  }
 } 
