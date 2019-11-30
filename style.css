@@ -62,6 +62,13 @@ nav ul {
   color: black;
 }
 
+#hero-title {
+  color: white;
+  font-weight: 10;
+  float: left;
+  margin: 30px 50px;
+}
+
 .navbar-white #hero-title {
   color: black;
 }
@@ -77,7 +84,7 @@ nav ul {
     position: fixed;
     top: 0;
     right: 0;
-    margin: 30px 50px;
+    margin: 30px 30px;
     max-width: 300px;
     z-index: 12;
     transition: all 0.5s linear;
@@ -171,13 +178,10 @@ nav ul {
     font-weight: 400;
     display: block;
   }
-}
-
-#hero-title {
-  color: white;
-  font-weight: 10;
-  float: left;
-  margin: 30px 50px;
+  
+  #hero-title {
+    margin: 10px;
+  }
 }
 
 footer {
