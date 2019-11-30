@@ -308,10 +308,14 @@ form input[type=submit] {
 #subscribe {
   background: rgb(50,0,217);
   background: linear-gradient(45deg, rgba(50,0,217,1) 0%, rgba(0,0,0,1) 81%);
-  padding: 70px;
   color: white;
+  padding: 30px;
   font-size: 2.5rem;
   font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #contact {
@@ -379,7 +383,6 @@ form input[type=submit] {
   font-size: 1rem;
   border: none;
   display: table;
-  margin: 0 auto;
 }
 
 .btn.block {
@@ -415,9 +418,7 @@ form input[type=submit] {
 }
 
 .btn.center {
-  position: absolute; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 .btn.big {
@@ -629,8 +630,14 @@ input.radio.red:checked ~ label:before {
   #contact-form {
     width: 70%;
   }
-  
+} 
+
+@media only screen and (max-width: 990px) {
   #subscribe {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-} 
+}
