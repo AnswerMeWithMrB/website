@@ -49,5 +49,11 @@
       </div>
     </div>
     {% include base/footer.html %}
+    <script type="text/javascript">
+      document.querySelector('.navbar-toggler').onClick = function(e) {
+        document.querySelector('.mobileMenu').classList.toggle("open");
+        document.querySelector('.navbar-toggler').classList.toggle("hamburger");
+      }
+    </script>
   </body>
 </html>
