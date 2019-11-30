@@ -31,7 +31,8 @@
       </div>
       <div id="contact" class="parallax">
         <h1 class="center white font-400">Contact Mr B</h1>
-        <form id="contact-form" method="post" action="{{ '/contact-post.php' | relative_url }}">
+        <form id="contact-form" method="post" action="https://getsimpleform.com/messages?form_api_token=b7dfb894a05a009bb8765e5536c854ae">
+          <input type='hidden' name='redirect_to' value='https://answermewithmrb.tk' />
           <label for="fname">Name:</label>
           <input type="text" id="fname" name="name" placeholder="Name" required>
           <label for="fname">Email:</label>
