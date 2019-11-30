@@ -614,4 +614,8 @@ input.radio.red:checked ~ label:before {
   .parallax {
     background-attachment: scroll;
   }
+  
+  #header-text {
+    padding: 50px 0;
+  }
 } 
