@@ -429,7 +429,7 @@ form input[type=submit] {
 }
 
 /* video-card style */
-/* [To Do]: In future move to sass and build with Jekyll in seperate modules */
+/* [ToDo]: In future move to sass and build with Jekyll in seperate modules */
 
 .video-list-holder {
   margin: 60px 0;
