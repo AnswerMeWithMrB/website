@@ -588,3 +588,10 @@ input.radio.red:checked ~ label:before {
 	color: #9CE2AE;
 	background-color: red;
 }
+
+@media only screen and (max-width: 800px) {
+  .video-card {
+    width: 100%;
+  }
+} 
+}
