@@ -40,7 +40,8 @@ nav {
 }
 
 .navbar-toggler {
-  display: none;	
+  display: none;
+  cursor: pointer;
 }
 
 nav ul li {
