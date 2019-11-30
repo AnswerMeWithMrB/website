@@ -303,8 +303,8 @@ form input[type=submit] {
 }
 
 #subscribe {
-  background: rgb(249,190,11);
-  background: linear-gradient(45deg, rgba(249,190,11,1) 0%, rgba(50,0,217,1) 44%, rgba(0,0,0,1) 100%);  
+  background: rgb(50,0,217);
+  background: linear-gradient(45deg, rgba(50,0,217,1) 0%, rgba(0,0,0,1) 81%);
   padding: 70px;
   color: white;
   font-size: 2.5rem;
