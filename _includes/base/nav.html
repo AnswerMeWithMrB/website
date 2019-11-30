@@ -1,11 +1,19 @@
-<div class="nav-bar {% if page.layout != 'home' %}navbar-white{% endif %}">
+<div class="nav-bar mobileMenu {% if page.layout != 'home' %}navbar-white{% endif %}">
   <a href="{{ '/' | relative_url }}"><h1 id="hero-title"><span class="bold">ANSWER</span> ME <span class="bold">WITH</span> MR <span class="bold">B</span></h1></a>
   <nav>
-    <a href="{{ '/videos' | relative_url }}" class="nav-link {% if page.layout != 'home' %}active{% endif %}">Videos</a>
-    <a href="#" class="nav-link">Contact</a>
-    <a href="{{ '/' | relative_url }}" class="nav-link {% if page.layout == 'home' %}active{% endif %}">Home</a>
+    <ul>
+      <li>
+        <a href="{{ '/videos' | relative_url }}" class="nav-link {% if page.layout != 'home' %}active{% endif %}">Videos</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+      <li>
+        <a href="{{ '/' | relative_url }}" class="nav-link {% if page.layout == 'home' %}active{% endif %}">Home</a>
+      </li>
+    </ul>
   </nav>
-  <button class="navbar-toggler hamburger {% if page.layout == 'home' %}white{% endif %}">
+  <button class="navbar-toggler hamburger {% if page.layout == 'home' %}white{% endif %}" type="button">
     <span class="icon-bar top-bar"></span>
     <span class="icon-bar middle-bar"></span>
     <span class="icon-bar bottom-bar"></span>
