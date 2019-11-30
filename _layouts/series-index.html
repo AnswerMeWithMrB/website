@@ -10,9 +10,9 @@ layout: subpage
   </div>
 </div>
 <div id="page">
-  <div id="welcome">
+  <div id="welcome" style="padding: 40px 0">
     <a href="{{ '/videos' | relative_url }}" class="btn purple">View all</a>
-    <div class="video-list" style="margin-top: 40px;">
+    <div class="video-list">
       {% assign videos = site[page.collection] %}
       {% include tools/sort-videos.html videos=videos %}
       {% for video in out_sortedVideos %}
