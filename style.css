@@ -155,7 +155,7 @@ nav ul {
     left: auto;
     right: 0;
     transition: transform ease 0.4s;
-    background-color: black;
+    background-color: #05000d;
     width: 100%;
     z-index: 11;
     display: flex;
