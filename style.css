@@ -54,6 +54,18 @@ nav ul {
   margin: 0;
 }
 
+.navbar-white {
+  background-color: white;
+}
+
+.navbar-white .nav-link {
+  color: black;
+}
+
+.navbar-white #hero-title {
+  color: black;
+}
+
 /* Media query for navbar */
 @media only screen and (max-width: 800px) {
   /* Hide links */
@@ -149,13 +161,13 @@ nav ul {
     margin: auto;
   }
   
-  .nav-link {
+  .nav-link, .navbar-white .nav-link {
     float: none;
     color: #f2f2f2;
     text-align: center;
     padding: 5px 10px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 30px;
     font-weight: 400;
     display: block;
   }
@@ -395,18 +407,6 @@ form input[type=submit] {
 
 .btn.big {
   font-size: 1.5rem;
-}
-
-.navbar-white {
-  background-color: white;
-}
-
-.navbar-white a {
-  color: black;
-}
-
-.navbar-white #hero-title {
-  color: black;
 }
 
 .body {
