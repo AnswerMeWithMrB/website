@@ -617,4 +617,8 @@ input.radio.red:checked ~ label:before {
   #header-text {
     padding: 50px 0;
   }
+  
+  #welcome {
+    width: 70%;
+  }
 } 
