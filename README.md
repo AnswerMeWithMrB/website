@@ -1,7 +1,7 @@
 # Answer Me With Mr B - Website
 Welcome! Did you know, Physics is true ya!
 
-Here we have a Work In Progress website for the YouTube channel [Answer Me With Mr B](https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ).
+Here we have the source files for the website of the YouTube channel [Answer Me With Mr B](https://www.youtube.com/channel/UCv7XjzuzmAKm458IqFehCPQ).
 
 If you wish to help out, view the [Contributing instructions](#contributing).
 
@@ -24,7 +24,7 @@ Have a look at the links below to begin contributing.
 
 ## How to Github
 
-So, you're new to GitHub, eh? Welcome! Github is a platform in which programmers from all over the world share their code to be enjoyed by the masses, for free! Here, we use it in order for many people to collaborate together to manage the AMWMB website.
+So, you're new to GitHub? Welcome! Github is a platform in which programmers from all over the world share their code to be enjoyed by the masses, for free! Here, we use it in order for many people to collaborate together to manage the AMWMB website.
 
 Github can be very confusing when you first start. If you can manage a quick paced lesson, check out The Coding Train's tutorial [Git and GitHub for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV) to get started. Video 1.1 is a useful introduction to GitHub, but video 1.3 will help you out the most here.
 
@@ -177,7 +177,7 @@ GitHub Pages was chosen as it offers WONDERFUL integration with Jekyll, read on 
 
 [Jekyll](https://jekyllrb.com/), is what powers GitHub pages.
 
-For our purposes, it is what allows the video pages to be rendered from just the data .md files.
+For our purposes, it is what allows the video pages to be rendered from just the .md data files.
 
 If you're looking for something more challenging to do, have a look at the [Jekyll Docs](https://jekyllrb.com/docs/) and try to make a new page.
 
@@ -231,7 +231,7 @@ If you're looking for extra brownie points, try to set your tab size to 2 spaces
 
 If you're like a certain person I know, cough cough, sometimes you think it acceptable to use weird or convenient variable or file names whenever it suits you. IT IS NOT.
 
-Always try to use names that are meaningful and will help you when you are debuging, or when you have finished your 1000000 line of code project and can't remember what `banana` variable does...
+Always try to use names that are meaningful and will help you when you are debuging, or when you have finished your 1000000-lines-of-code project and can't remember what the `banana` variable does...
 
 Also, think about the other people you are working with on GitHub, making things READABLE is a necessity. Speaking of readability...
 
@@ -255,13 +255,13 @@ Here are some of the common comment formats:
 
 # The Future
 
-There are many places that the AMWMB site could go, below are just a few ideas that you could many persue.
+There are many places that the AMWMB site could go, below are just a few ideas that you could maybe persue.
 
 ## Astronomy
 
 There's endless possiblity when it comes to web developement. And one thing we can also manage, is to create more pages.
 
-Maybe branching AMWMB into the extra curricular could encourage more people into the realm of Physics.
+Maybe branching AMWMB into the extra curricular could encourage more people into the realm of Physics (is true ya).
 
 ## Activities
 
