@@ -198,6 +198,25 @@ There is way too much to explain here, but between the Jekyll docs and the liqui
 - [Jekyll Liquid Docs](https://jekyllrb.com/docs/liquid/)
 - [Official Liquid Docs](https://shopify.github.io/liquid/)
 
+### Files in the repo
+
+There are many files that can be found in the repo above, here are some explanations of some of them.
+
+- .gitignore
+  - Github uses this to see which files it should ignore when pushing new commits. When developing on GitHub Desktop, this will be used to not push your built `_site` files to the repo.
+- 404.html
+  - This is the page which is displayed when the url doesn't match any other page on the site. Physics joke included, of course.
+- CNAME
+  - This file is used by GitHub pages in order to setup the custom domain: [answermewithmrb.tk](https://answermewithmrb.tk)
+- Gemfile
+  - The Gemfile holds details about the Ruby dependencies required by the site. This includes [Jekyll](#jekyll).
+- Gemfile.lock
+  - Similar to `Gemfile`.
+- README.md
+  - You're reading it right now.
+- _config.yml
+  - This is where the [Jekyll](#jekyll) configuration for the site is stored.
+
 ## Writing Code
 
 Anyone who knows me IRL, will know that I'm a stickler when it comes to organising and presenting. Ignore the handwriting. CODE IS NO DIFFERENT. Follow some key tips below for how to layout your code nicely.
