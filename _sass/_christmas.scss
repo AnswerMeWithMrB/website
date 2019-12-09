@@ -5,12 +5,26 @@ $globe-spread: 3px;
 $light-off-opacity: 0.4;
 
 body {
-  background-color: black;
+  background-color: #800000;
+  color: white;
 }
 
 #title {
   color: white;
 }
+
+.video-header {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+form label {
+  color: black;
+}
+
 .lightrope {
   text-align: center;
   white-space: nowrap;
