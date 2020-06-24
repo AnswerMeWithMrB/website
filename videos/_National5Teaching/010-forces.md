@@ -8,7 +8,7 @@ layout: video
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/AnswerMeWithMrB/orbit-game/sketch.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/AnswerMeWithMrB/orbit-game@latest/sketch.js"></script>
 <div id="sketch-holder"></div>
 <style>
 #sketch-holder {
