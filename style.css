@@ -498,6 +498,10 @@ form input[type=submit] {
   position: relative;
 }
 
+.video-card a {
+  text-decoration: none;
+}
+
 .video-badge {
   position: absolute;
   right: 0;
@@ -511,6 +515,10 @@ form input[type=submit] {
 .video-thumbnail {
   width: 100%;
   height: auto;
+}
+
+.video-description {
+  margin-bottom: 10px;
 }
 
 
